@@ -30,5 +30,11 @@ namespace AppiumTestCase
             Uri serverUri = new Uri("http://127.0.0.1:4723/wd/hub");
             driver = new AndroidDriver<AndroidElement>(serverUri, capabilities);
         }
+
+        [Test]
+        public void TestCase1()
+        {
+            driver.Navigate().GoToUrl("https://browseemall.com/");
+        }
     }
 }
