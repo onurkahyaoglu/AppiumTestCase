@@ -36,5 +36,12 @@ namespace AppiumTestCase
         {
             driver.Navigate().GoToUrl("https://browseemall.com/");
         }
+        [TearDown]
+        public void closeDriver()
+        {
+            // Eğer kapatılmak istenirse bunlar açılabilir.
+            //driver.CloseApp();
+            //driver.Quit();
+        }
     }
 }
